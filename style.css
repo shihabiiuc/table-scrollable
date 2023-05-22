@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e9ebec;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+}
+table tr {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+table tr th {
+  background-color: #cce6ff;
+}
+table tr:nth-child(even) {
+  background-color: #edf2fa;
+}
+table tr:hover {
+  background-color: #d9dadb;
+}
+
+table tr td,
+table tr th {
+  border: 1px solid #ff0000;
+  padding: 12px 8px;
+}
+
+.example-1 {
+  padding: 90px 15px;
+  background-color: #fff1f0;
+}
+.example-1 table {
+  width: 100%;
+  max-height: 370px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  display: block;
+}
+.example-1 table thead {
+  display: contents;
+}
+.example-1 table tbody {
+  display: block;
+}
+.example-1 table tr {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+  border-bottom: 1px solid transparent;
+}
+.example-1 table tr td,
+.example-1 table tr th {
+  border-right: 1px solid transparent;
+}
+.example-1 table tr td:last-child,
+.example-1 table tr th:last-child {
+  border-right: 1px solid red;
+}/*# sourceMappingURL=style.css.map */
