@@ -127,4 +127,15 @@ table tr th {
 .example-2 table tr td:last-child,
 .example-2 table tr th:last-child {
   border-right: 1px solid red;
+}
+
+.example-3 {
+  padding: 90px 15px;
+  background-color: #fff2de;
+}
+.example-3 .table-x-scrollbar {
+  overflow-x: auto;
+}
+.example-3 .table-x-scrollbar table {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

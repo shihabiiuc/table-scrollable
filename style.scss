@@ -127,3 +127,16 @@ table tr th {
     }
   }
 }
+
+// example 3
+.example-3 {
+  padding: 90px 15px;
+  background-color: #fff2de;
+
+  .table-x-scrollbar {
+    overflow-x: auto;
+    table {
+      width: 100%;
+    }
+  }
+}
