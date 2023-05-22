@@ -58,9 +58,6 @@ table tr th {
   overflow-x: auto;
   display: block;
 }
-.example-1 table thead {
-  display: contents;
-}
 .example-1 table tbody {
   display: block;
 }
@@ -68,6 +65,14 @@ table tr th {
   display: grid;
   grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
   border-bottom: 1px solid transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; /* it helps the background color go upto the end. otherwise, background color will stop after 100% viewport width */
+}
+@media (min-width: 768px) {
+  .example-1 table tr {
+    width: 100%;
+  }
 }
 .example-1 table tr td,
 .example-1 table tr th {
@@ -75,5 +80,51 @@ table tr th {
 }
 .example-1 table tr td:last-child,
 .example-1 table tr th:last-child {
+  border-right: 1px solid red;
+}
+
+.example-2 {
+  padding: 90px 15px;
+  background-color: #d4ffdf;
+}
+.example-2 table {
+  width: 100%;
+  max-height: 370px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  display: block;
+}
+.example-2 table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+.example-2 table tbody {
+  display: block;
+}
+.example-2 table tr {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+  border-bottom: 1px solid transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; /* it helps the background color go upto the end. otherwise, background color will stop after 100% viewport width */
+}
+@media (min-width: 768px) {
+  .example-2 table tr {
+    width: 100%;
+  }
+}
+.example-2 table tr td,
+.example-2 table tr th {
+  border-right: 1px solid transparent;
+}
+.example-2 table tr td:last-child,
+.example-2 table tr th:last-child {
   border-right: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
